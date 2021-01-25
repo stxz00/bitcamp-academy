@@ -42,7 +42,9 @@
 			rs = stmt.executeQuery(sql);
 			if(rs.next()){
 				%>
-				<h1><%=request.getParameter("num") %>번글 Detail Page</h1>
+				<h1><%=request.getParameter("num") %>번글 Edit Page</h1>
+				<form action="update.jsp">
+				<input type="hidden" name="num" value="<%=num %>"> <%//폼 중에서 수정하지 못하도록 숨겨서 전달하는 방법임 %>
 				<table border="1" cellspacing="0" width="80%">
 					<tr>
 						<td width="80" align="center">글번호</td>
@@ -54,18 +56,19 @@
 					</tr>
 					<tr>
 						<td width="80" align="center">제목</td>
-						<td colspan="5"><%=rs.getString(3) %></td>
+						<td colspan="5"><input type="text" name="sub" value="<%=rs.getString(3) %>"></td>
 					</tr>
 					<tr>
-						<td colspan="6"><%=rs.getString(4).replace("\r\n", "<br>") %></td>
+						<td colspan="6"><textarea name="content" cols="60" rows="10"><%=rs.getString(4) %></textarea></td>
 					</tr>
 					<tr>
-						<td colspan="6">
-							<a href="edit.jsp?num=<%=num %>">[수 정]</a>
-							<a href="delete.jsp?num=<%=num %>">[삭 제]</a>
+						<td colspan="6" align="center">
+							<input type="submit" value="수 정">
+							<input type="reset" value="취 소">
 						</td>
 					</tr>
 				</table>
+				</form>
 				<%
 			}
 		}finally{
