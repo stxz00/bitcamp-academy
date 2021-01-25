@@ -28,7 +28,8 @@
 		stmt = conn.createStatement();
 		stmt.executeUpdate(sql);
 	}finally{
-		
+		if(conn!=null){conn.close();}
+		if(stmt!=null){stmt.close();}
 	}
 	
 	%>
