@@ -49,12 +49,12 @@ try{
 	while(rs.next()){
 %>
 		<tr>
-			<td><%=rs.getInt(1) %></td>
-			<td><%=rs.getString(2) %></td>
-			<td><%=rs.getString(3) %></td>
-			<td><%=rs.getDate(4) %></td>
+			<td><a href="detail.jsp?num=<%=rs.getInt(1) %>"><%=rs.getInt(1) %></a></td>
+			<td><a href="detail.jsp?num=<%=rs.getInt(1) %>"><%=rs.getString(2) %></a></td>
+			<td><a href="detail.jsp?num=<%=rs.getInt(1) %>"><%=rs.getString(3) %></a></td>
+			<td><a href="detail.jsp?num=<%=rs.getInt(1) %>"><%=rs.getDate(4) %></a></td>
 		</tr>
-<% 
+<% 				//앵커를 추가하여 상세보기로 들어가는 상황이므로 번호를 기준으로 텍스트를 보여주게 할 것
 	}
 }finally{
 	if(rs!=null){rs.close();}
@@ -63,6 +63,7 @@ try{
 }
 %>					
 		</table>
+		<a href="add.jsp">[입 력]</a>
 		</center>		
 		</td>
 	</tr>
