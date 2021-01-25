@@ -9,20 +9,20 @@
 <body>
 <table border="0" cellspacing="0" width="600" align="center">
 	<tr>
-		<td bgcolor="#000000" colspan="6"><img src="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\header.jpg"></td>
+		<td bgcolor="#000000" colspan="6"><img src="imgs\header.jpg"></td>
 	</tr>
 	<tr>
-		<td align="center" background="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"><img src="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"></td>
-		<td align="center" width="100" background="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"><a href="index.jsp">[HOME]</a></td>
-		<td align="center" width="100" background="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"><a href="intro.jsp">[INTRO]</a></td>
-		<td align="center" width="100" background="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"><a href="list.jsp">[B B S]</a></td>
-		<td align="center" width="100" background="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"><a href="guest.jsp">[방명록]</a></td>
-		<td align="center" background="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"><img src="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"></td>
+		<td align="center" background="imgs\menu.jpg"><img src="imgs\menu.jpg"></td>
+		<td align="center" width="100" background="imgs\menu.jpg"><a href="index.jsp">[HOME]</a></td>
+		<td align="center" width="100" background="imgs\menu.jpg"><a href="intro.jsp">[INTRO]</a></td>
+		<td align="center" width="100" background="imgs\menu.jpg"><a href="list.jsp">[B B S]</a></td>
+		<td align="center" width="100" background="imgs\menu.jpg"><a href="guest.jsp">[방명록]</a></td>
+		<td align="center" background="imgs\menu.jpg"><img src="imgs\menu.jpg"></td>
 	</tr>
 	<tr>
 		<td colspan="6">
 		<center>
-		<img src="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\content.jpg">
+		<img src="imgs\content.jpg">
 		</center>		
 		</td>
 	</tr>

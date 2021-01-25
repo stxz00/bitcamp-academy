@@ -1,7 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%> 
 <%@ page import="oracle.jdbc.driver.OracleDriver,java.sql.*" %>
-<%//add게스트에서 게스트파일 불러오는데 타입이 틀려버리면 오류나니까 꼭 컨텐트 타입 여부 확인!%>
+<%//add게스트에서 게스트파일 불러오는데 타입이 틀려버리면 오류나니까 꼭 컨텐트 타입 여부 확인!
+	//굳이 입력완료창 등을 만드는 이유는 url,쿼리 등이 노출되면 안되는 이유가 있으므로(백엔드) 따로 창을 만들어서 비공개하는 것
+	//
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -11,15 +14,15 @@
 <body>
 <table border="0" cellspacing="0" width="600" align="center">
 	<tr>
-		<td bgcolor="#000000" colspan="6"><img src="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\header.jpg"></td>
+		<td bgcolor="#000000" colspan="6"><img src="imgs\header.jpg"></td>
 	</tr>
 	<tr>
-		<td align="center" background="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"><img src="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"></td>
-		<td align="center" width="100" background="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"><a href="index.jsp">[HOME]</a></td>
-		<td align="center" width="100" background="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"><a href="intro.jsp">[INTRO]</a></td>
-		<td align="center" width="100" background="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"><a href="list.jsp">[B B S]</a></td>
-		<td align="center" width="100" background="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"><a href="guest.jsp">[방명록]</a></td>
-		<td align="center" background="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"><img src="D:\bitcamp(학원전용)\nowBitcamp\WebWork\day02\imgs\menu.jpg"></td>
+		<td align="center" background="imgs\menu.jpg"><img src="imgs\menu.jpg"></td>
+		<td align="center" width="100" background="imgs\menu.jpg"><a href="index.jsp">[HOME]</a></td>
+		<td align="center" width="100" background="imgs\menu.jpg"><a href="intro.jsp">[INTRO]</a></td>
+		<td align="center" width="100" background="imgs\menu.jpg"><a href="list.jsp">[B B S]</a></td>
+		<td align="center" width="100" background="imgs\menu.jpg"><a href="guest.jsp">[방명록]</a></td>
+		<td align="center" background="imgs\menu.jpg"><img src="imgs\menu.jpg"></td>
 	</tr>
 	<tr>
 		<td colspan="6">
