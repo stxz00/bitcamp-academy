@@ -7,6 +7,19 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
+<h1>±¸±¸´Ü 2</h1>
+<table border="1" width="100%">
+<%
+for(int j=1; j<10; j++){
+%>
+	<tr>
+		<%
+		for(int i=2; i<10; i++){
+		%>
+		<td><%=i %>x<%=j%>=<%=i*j %></td>
+		<%} %>
+	</tr>
+<%} %>
+</table>
 </body>
 </html>

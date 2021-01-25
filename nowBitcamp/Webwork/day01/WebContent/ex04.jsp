@@ -1,7 +1,3 @@
-<%@page import="java.io.Writer"%>
-<%@page import="java.util.Map"%>
-<%@page import="java.util.Map.Entry"%>
-<%@page import="java.util.Set"%>
 <%@page import="java.util.Enumeration"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
