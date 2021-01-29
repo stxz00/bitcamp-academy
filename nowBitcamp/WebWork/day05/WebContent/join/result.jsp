@@ -9,7 +9,12 @@
 </head>
 <body>
 <%
+	request.setCharacterEncoding("euc-kr");
 	String id=request.getParameter("id");
+	id=id.replace("-", "─");
+	id=id.replace("\"", "˝");
+	id=id.replace("\'", "´");
+	id=id.replace("<", "＜");//보안의 기본 중요성.(못쓰게 하던가 이처럼 비슷한 특수문자로 바꿔주거나)
 	String pw=request.getParameter("pw");
 	String sql="select count(*) from user04 where id='"+id+"' and pw='"+pw+"'";
 	int result=0;
@@ -45,7 +50,7 @@
 				<a href="../index.jsp">[HOME]</a>
 				<a href="../intro.jsp">[INTRO]</a>
 				<a href="../bbs/list.jsp">[B B S]</a>
-				<a href="../guest.list.jsp">[GUEST]</a>
+				<a href="../guest/list.jsp">[GUEST]</a>
 			</td>
 		</tr>
 		<tr>

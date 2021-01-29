@@ -48,7 +48,7 @@
 				<a href="../index.jsp">[HOME]</a>
 				<a href="../intro.jsp">[INTRO]</a>
 				<a href="../bbs/list.jsp">[B B S]</a>
-				<a href="../guest.list.jsp">[GUEST]</a>
+				<a href="../guest/list.jsp">[GUEST]</a>
 			</td>
 		</tr>
 		<tr>

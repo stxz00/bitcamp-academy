@@ -18,7 +18,7 @@
 	String content=request.getParameter("content");
 	
 	if(session.getAttribute("loginID")!=null){
-		id=(String)session.getAttribute("sessionID");
+		id=(String)session.getAttribute("loginID");
 	}
 	
 	String sql="insert into bbs04 values(bbs04_seq.nextval,'"
