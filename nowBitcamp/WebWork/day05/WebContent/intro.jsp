@@ -6,13 +6,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert title here</title>
 </head>
+<%
+	//session.invalidate(); //인트로로 가면 세션 갱신으로 인해  접속 끊김
+	//session.removeAttribute("loginResult"); //로그인 리절트 삭제로 끊김
+	//session.setAttribute("loginResult", null); //리절트 값을 바꿔주면 끊김
+%>
 <body>
 	<table width="100%">
 		<tr>
 			<td><img src="imgs/blue_logo.png"></td>
 			<td width="200">
+				<%if(session.getAttribute("loginResult")==null){ %>
 				<a href="join/login.jsp">[로그인]</a>
 				<a href="join/add.jsp">[회원가입]</a>
+			<%}else{ %>	
+				<a href="join/logout.jsp">[로그아웃]</a>
+			<%} %>
 			</td>
 		</tr>
 		<tr>

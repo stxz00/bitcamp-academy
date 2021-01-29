@@ -19,6 +19,7 @@
 	try{
 		Statement stmt=MyOracle.getConnection().createStatement();
 		stmt.executeUpdate("update bbs04 set cnt=cnt+1 where num="+num);
+		stmt=MyOracle.getConnection().createStatement();
 		ResultSet rs=stmt.executeQuery(sql);
 		if(rs.next()){
 			bean.num=rs.getInt("num");
@@ -40,8 +41,12 @@
 		<tr>
 			<td><img src="../imgs/blue_logo.png"></td>
 			<td width="200">
+				<%if(session.getAttribute("loginResult")==null){ %>
 				<a href="../join/login.jsp">[로그인]</a>
 				<a href="../join/add.jsp">[회원가입]</a>
+			<%}else{ %>	
+				<a href="../join/logout.jsp">[로그아웃]</a>
+			<%} %>
 			</td>
 		</tr>
 		<tr>

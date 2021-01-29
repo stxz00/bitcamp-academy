@@ -45,10 +45,10 @@
 			<td><img src="../imgs/blue_logo.png"></td>
 			<td width="200">
 				<%if(session.getAttribute("loginResult")==null){ %>
-				<a href="../join/login.jsp">[로그인]</a>
-				<a href="../join/add.jsp">[회원가입]</a>
+				<a href="login.jsp">[로그인]</a>
+				<a href="add.jsp">[회원가입]</a>
 			<%}else{ %>	
-				<a href="../join/logout.jsp">[로그아웃]</a>
+				<a href="logout.jsp">[로그아웃]</a>
 			<%} %>
 			</td>
 		</tr>
@@ -56,51 +56,44 @@
 			<td colspan="2"  align="center">
 				<a href="../index.jsp">[HOME]</a>
 				<a href="../intro.jsp">[INTRO]</a>
-				<a href="list.jsp">[B B S]</a>
+				<a href="../bbs/list.jsp">[B B S]</a>
 				<a href="../guest.list.jsp">[GUEST]</a>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<center>
-				<h1>입력 페이지</h1>
-				<form action="insert.jsp" method="post"> 
-				<!--포스트타입이라 바이너리 값으로 header로 올려서 보내므로 직접 엔코딩 설정을 insert.jsp에서 해줘야함 -->
-					<table width="400">
+				<h1>회원가입</h1> <!-- 일단은 비회원 게시판이었다 치고 함 -->
+				<form action="insert.jsp" method="post">
+					<table width="400" align="center">
 						<tr>
-							<td>제목</td>
-							<td><input type="text" name="sub"></td>
+							<td>id:</td>
+							<td><input type="text" name="id"></td>
 						</tr>
 						<tr>
-							<td>글쓴이</td>
-							<% 
-								String name="";
-								Object obj=session.getAttribute("loginID");
-							if(obj==null){
-							%>
-								<td><input type="text" name="id" ></td>
-								
-							<%
-							}else{
-								name=(String)obj;
-							%>
-								<td><%=name %><input type="hidden" name="id" value="<%=name %>" ></td>
-								
-							<%} %>
+							<td>pw:</td>
+							<td><input type="text" name="pw"></td>
 						</tr>
 						<tr>
-							<td></td>
-							<td><textarea name="content" style="width:100%"></textarea></td>
+							<td>pw 확인:</td>
+							<td><input type="text" name="re"></td>
 						</tr>
 						<tr>
-						
+							<td>이름</td>
+							<td><input type="text" name="name"></td>
+						</tr>
+						<tr>
+							<td>나이:</td>
+							<td><input type="text" name="age"></td>
+						</tr>
+						<tr>
 							<td colspan="2" align="center">
-								<input type="submit" value="입 력">
-								<input type="reset" value="취 소">	
+								<input type="submit" value="가 입">
+								<input type="reset" value="취 소">
 							</td>
 						</tr>
 					</table>
-				</form>
+				</form>	
 				</center>
 			</td>
 		</tr>
