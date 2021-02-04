@@ -248,7 +248,7 @@
 							Al al=ranklist.get(i);
 					%>
 					<tr>
-						<td height="35" bgcolor="#E6E6FA" style="font-size:13px;">&nbsp;<strong style="font-size:9pt;">인기</strong>&nbsp;<img alt="" src="imgs/star2.png">&nbsp;<a href="detail/?num=<%=al.num %>" style="text-decoration: none; color: #000000" ><%=al.sub %></a>
+						<td height="35" bgcolor="#E6E6FA" style="font-size:13px;">&nbsp;<strong style="font-size:9pt;">인기</strong>&nbsp;<img alt="" src="imgs/star2.png">&nbsp;<a href="detail.jsp/?num=<%=al.num %>" style="text-decoration: none; color: #000000" ><%=al.sub %></a>
 						</td>
 						<td align="center" width="900" bgcolor="#E6E6FA" style="font-size:13px; color: #4B0082"><strong><%=al.id %></strong>
 						</td>
